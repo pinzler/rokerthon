@@ -73,7 +73,7 @@ if ($time >= 1415970000)
                       data-source="feature-bottom"
                       data-social="Facebook"
                       href="javascript:void(0);"
-                      onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://isitrokerthon.com/), 'facebook-share-dialog', 'width=626,height=436'); return false;">
+                      onclick="window.open( 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://isitrokerthon.com'), 'facebook-share-dialog', 'width=626,height=436'); return false;">
                       <img src="assets/images/facebook-black.svg" align="left"> Facebook
                     </a>
               <a alt="Share on Twitter"
@@ -83,7 +83,7 @@ if ($time >= 1415970000)
                       href="javascript:void(0);"
                       onclick="window.open( 'http://www.twitter.com/intent/tweet?text=IS%20IT%20%23ROKERTHON%3F&url=http://isitrokerthon.com/','','width=550, height=350, scrollbars=no' )">
 
-                      <img src="assets/images/fontawesome-twitter-black.0.svg" align="left"> Share
+                      <img src="assets/images/fontawesome-twitter-black.0.svg" align="left"> Twitter
                     </a>
                   </div>
             </p>
