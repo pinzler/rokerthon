@@ -87,9 +87,7 @@ if ($time >= 1415970000)
                     </a>
                   </div>
             </p>
-            <div class="footer-logos">
- <!--             <p><img src="assets/images/NBCNewsWhite.png"></p> -->
-              </div>
+            
           </div>
 
           <div class="mastfoot">
