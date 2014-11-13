@@ -2,20 +2,28 @@
 date_default_timezone_set("America/New_York");
 
 $time = time();
-//1415847600 //10pm EST tonight
-//1415970000 //8am EST Friday
+
+$images = array(
+  "assets/images/rokerthon.jpg",
+  "assets/images/rokerthon2.jpg"
+  );
+$randnum = rand(0, sizeof($images)-1);
+
 $isit = "NOT YET";
 $text = "More Info";
-if ($time >= 1415847600) 
+if ($time >= 1415847600) //10pm EST tonight
   {
     $text = "Live Stream";
     $isit="YES!";
   }
-if ($time >= 1415970000) 
+if ($time >= 1415970000) //8:05am EST Friday
   {
     $text = "More Info";
     $isit="IT'S OVER!";
   }
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +71,9 @@ if ($time >= 1415970000)
             <p>
               <?php if ($isit == "NOT YET") { ?>
             <img src="assets/images/rokerthonpre.jpg" width="75%">
-            <?php } else { ?> 
+            <?php } else if ($isit == "YES!") { ?> 
+              <img src="<?php echo $images[$randnum]; ?>" width="50%">
+              <?php } else { ?>
               <img src="assets/images/rokerthon.jpg" width="50%">
               <?php } ?>
             </p>
@@ -72,8 +82,8 @@ if ($time >= 1415970000)
             
             <p class="lead">
             <div class="share-tools">
-              <a id="storylink" href="http://today.com/rokerthon" class="btn btn-lg btn-default"><?php echo $text; ?></a>
-              
+              <a id="storylink" href="http://today.com/rokerthon" target="_top" class="btn btn-lg btn-default"><?php echo $text; ?></a> 
+              <a id="donate" href="https://www.crowdrise.com/roker" target="_top" class="btn btn-lg btn-default">DONATE</a>
               <a alt="Share on Facebook"
                       class="btn btn-lg btn-default"
                       data-source="feature-bottom"
