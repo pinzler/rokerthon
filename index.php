@@ -16,7 +16,7 @@ if ($time >= 1415847600) //10pm EST tonight
     $text = "Live Stream";
     $isit="YES!";
   }
-if ($time >= 1415970000) //8:05am EST Friday
+if ($time >= 1415970300) //8:05am EST Friday
   {
     $text = "More Info";
     $isit="IT'S OVER!";
@@ -74,7 +74,7 @@ if ($time >= 1415970000) //8:05am EST Friday
             <?php } else if ($isit == "YES!") { ?> 
               <img src="<?php echo $images[$randnum]; ?>" width="50%">
               <?php } else { ?>
-              <img src="assets/images/rokerthon.jpg" width="50%">
+              <img src="assets/images/over.png" width="70%">
               <?php } ?>
             </p>
             
