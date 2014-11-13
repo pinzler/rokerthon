@@ -61,7 +61,7 @@ if ($time >= 1415970000)
             <h1 class="cover-heading" id="headline"><?php echo $isit; ?></h1>
 
             <p>
-              <?php if($isit == "NOT YET") { ?>
+              <?php if ($isit == "NOT YET") { ?>
             <img src="assets/images/rokerthonpre.jpg" width="75%">
             <?php } else { ?> 
               <img src="assets/images/rokerthon.jpg" width="50%">
