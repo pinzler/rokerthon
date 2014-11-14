@@ -7,6 +7,10 @@ $images = array(
   "assets/images/rokerthon.jpg",
   "assets/images/rokerthon2.jpg"
   );
+$overimages = array(
+  "assets/images/over.png",
+  "assets/images/over2.jpg"
+  );
 $randnum = rand(0, sizeof($images)-1);
 
 $isit = "NOT YET";
@@ -74,7 +78,7 @@ if ($time >= 1415970300) //8:05am EST Friday
             <?php } else if ($isit == "YES!") { ?> 
               <img src="<?php echo $images[$randnum]; ?>" width="50%">
               <?php } else { ?>
-              <img src="assets/images/over.png" width="70%">
+              <img src="<?php echo $overimages[$randnum]; ?>" width="60%">
               <?php } ?>
             </p>
             
